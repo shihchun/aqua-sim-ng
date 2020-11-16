@@ -1,0 +1,28 @@
+CXXFLAGS="-Wall -Werror -Wno-parentheses" ./waf configure --enable-examples --enable-tests --with-python=python2 --force-planetlab --enable-des-metrics --enable-mpi --boost-include=/usr/local/include --boost-libs=/usr/local/lib
+
+sudo apt-get install libpython2.7-dev python-numpy # header prob
+
+cmake -D CMAKE_C_FLAGS=-fgnu89-inline ../gccxml
+make
+sudo make install
+
+
+sudo apt-get install python-gobject-2-dev gobject-introspection
+
+
+VcXsrv
+sudo apt-get install x11-apps
+echo "export DISPLAY=127.0.0.1:0" >> ~/.zshrc
+xeyes
+
+choco install lxrunoffline
+icacls D:\wsl /grant "chenw:(OI)(CI)(F)"
+lxrunoffline list
+lxrunoffline move -n Ubuntu-16.04 -d D:\wsl\installed\Ubuntu-16.04
+
+sudo apt-get install libsqlite-dev libsqlite3-ocaml-dev 
+
+
+scma
+
+aff3ct --sim-type "BFER" --sim-cde-type "UNCODED" --crc-type "24-5GA"  -K "1200" -m "0" -M "32" -s "2" --chn-type "RAYLEIGH" --mdm-type "SCMA" --mdm-ite "4" --mnt-max-fe "100" --mdm-codebook "conf/mod/SCMA/CS1.cb"  --sim-meta "1.CRC_before_encoder"

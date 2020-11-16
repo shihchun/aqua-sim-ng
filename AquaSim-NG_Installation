@@ -1,0 +1,16 @@
+1. Prerequisites
+
+apt-get install g++ python git tar bunzip2
+
+2. Build AquaSim-NG
+
+cd  ns-3.29
+./waf clean
+cp ./src/applications/model/onoff-application.h ./build/ns3
+./waf configure --build-profile=debug --enable-examples
+./waf
+
+3. Clean the project folder
+
+./waf clean
+

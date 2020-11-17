@@ -20,7 +20,7 @@ on how to use bake to access optional ns-3 components.
 
 [check on my blog shihchun.github.io](https://shihchun.github.io/ns3_installation/)
 
-installation
+installation on ubuntu 18.04
 
 ```sh
 ./waf configure --enable-examples --enable-tests --with-python=python2 --enable-mpi
